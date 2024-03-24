@@ -1,17 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Inicio from "./paginas/Inicio";
+import SobreMim from "./paginas/SobreMim";
+
+console.log(window.location);
+
+const pagina = window.location.pathname === "/" ? <Inicio /> : <SobreMim />;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
-  );
+  return pagina;
 }
 
 export default App;
