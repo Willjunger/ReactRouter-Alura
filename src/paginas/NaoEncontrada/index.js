@@ -20,7 +20,7 @@ export default function NaoEncontrada() {
           inicial.
         </p>
 
-        <div className={styles.botaoContainer} onClick={() => navegar()}>
+        <div className={styles.botaoContainer} onClick={() => navegar(-1)}>
           <BotaoPrincipal tamanho="lg">Voltar</BotaoPrincipal>
         </div>
 
